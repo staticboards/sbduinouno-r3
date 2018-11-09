@@ -1,0 +1,13 @@
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.zip
+*.net
+*.csv
+*.xml
+*-cache.*
+*-rescue.lib
+gerber/
+rescue-backup/
+clean/
+datasheet/
