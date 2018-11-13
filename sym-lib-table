@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sbduino-uno-rescue)(type Legacy)(uri ${KIPRJMOD}/sbduino-uno-rescue.lib)(options "")(descr ""))
+  (lib (name staticboards)(type Legacy)(uri ${KISBLIB}/staticboards/staticboards.lib)(options "")(descr ""))
+)

@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:sbduino-uno-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:sbduino-uno-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CH340G_USB_to_UART U3
+L staticboards:CH340G_USB_to_UART U3
 U 1 1 57714E99
 P 3550 6350
 F 0 "U3" H 3350 5650 60  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "" H 3635 7640 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM358 U1
+L sbduino-uno-rescue:LM358 U1
 U 1 1 57715091
 P 1750 4050
 F 0 "U1" H 1700 4250 50  0000 L CNN
@@ -68,7 +38,7 @@ F 4 "595-LMV358IDGKR" H 1750 4050 60  0001 C CNN "Mouser"
 	1    0    0    1   
 $EndComp
 $Comp
-L LM358 U1
+L sbduino-uno-rescue:LM358 U1
 U 2 1 57715251
 P 4125 4050
 F 0 "U1" H 4075 4250 50  0000 L CNN
@@ -79,7 +49,7 @@ F 3 "" H 4125 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R1
+L Device:R_Small R1
 U 1 1 577154FC
 P 1000 3950
 F 0 "R1" H 1030 3970 50  0000 L CNN
@@ -90,7 +60,7 @@ F 3 "" H 1000 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R2
+L Device:R_Small R2
 U 1 1 57715561
 P 1000 4350
 F 0 "R2" H 1030 4370 50  0000 L CNN
@@ -101,7 +71,7 @@ F 3 "" H 1000 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BARREL_JACK CON1
+L sbduino-uno-rescue:BARREL_JACK CON1
 U 1 1 57715639
 P 1075 2700
 F 0 "CON1" H 1075 2950 50  0000 C CNN
@@ -113,7 +83,7 @@ F 4 "490-PJ-202A" H 1075 2700 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D1
+L Device:D D1
 U 1 1 577156B0
 P 1675 2600
 F 0 "D1" H 1675 2500 50  0000 C CNN
@@ -125,7 +95,7 @@ F 4 "625-RS1A-E3" H 1675 2600 60  0001 C CNN "Mouser"
 	-1   0    0    1   
 $EndComp
 $Comp
-L NCP1117ST50T3G-RESCUE-sbduino-uno U2
+L sbduino-uno-rescue:NCP1117ST50T3G-RESCUE-sbduino-uno U2
 U 1 1 577159E9
 P 3000 2650
 F 0 "U2" H 3200 2425 50  0000 C CNN
@@ -137,7 +107,7 @@ F 4 "863-NCP1117ST50T3G" H 3000 2650 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C5
+L Device:CP_Small C5
 U 1 1 57715E9E
 P 3550 2800
 F 0 "C5" H 3560 2870 50  0000 L CNN
@@ -149,7 +119,7 @@ F 4 "74-TP3A106K016C1700A" H 3550 2800 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C6
+L Device:C_Small C6
 U 1 1 57715EF5
 P 4100 2800
 F 0 "C6" H 4110 2870 50  0000 L CNN
@@ -160,7 +130,7 @@ F 3 "" H 4100 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C1
+L Device:CP_Small C1
 U 1 1 57715F68
 P 1900 2800
 F 0 "C1" H 1910 2870 50  0000 L CNN
@@ -172,7 +142,7 @@ F 4 "598-AVE107M25X16T-F" H 1900 2800 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L Device:C_Small C7
 U 1 1 57715FC1
 P 4600 2800
 F 0 "C7" H 4610 2870 50  0000 L CNN
@@ -183,7 +153,7 @@ F 3 "" H 4600 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 5771603A
 P 4600 2450
 F 0 "#PWR01" H 4600 2300 50  0001 C CNN
@@ -194,7 +164,7 @@ F 3 "" H 4600 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 57716068
 P 1900 3000
 F 0 "#PWR02" H 1900 2750 50  0001 C CNN
@@ -205,7 +175,7 @@ F 3 "" H 1900 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 57716096
 P 3000 3000
 F 0 "#PWR03" H 3000 2750 50  0001 C CNN
@@ -216,7 +186,7 @@ F 3 "" H 3000 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 577160C4
 P 3550 3000
 F 0 "#PWR04" H 3550 2750 50  0001 C CNN
@@ -227,7 +197,7 @@ F 3 "" H 3550 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 577160F2
 P 4100 3000
 F 0 "#PWR05" H 4100 2750 50  0001 C CNN
@@ -238,7 +208,7 @@ F 3 "" H 4100 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 57716120
 P 4600 3000
 F 0 "#PWR06" H 4600 2750 50  0001 C CNN
@@ -249,7 +219,7 @@ F 3 "" H 4600 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 57716365
 P 1525 3000
 F 0 "#PWR07" H 1525 2750 50  0001 C CNN
@@ -260,7 +230,7 @@ F 3 "" H 1525 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 57717465
 P 1000 4550
 F 0 "#PWR08" H 1000 4300 50  0001 C CNN
@@ -271,7 +241,7 @@ F 3 "" H 1000 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 577177EE
 P 4025 4400
 F 0 "#PWR09" H 4025 4150 50  0001 C CNN
@@ -282,7 +252,7 @@ F 3 "" H 4025 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR010
+L power:+5V #PWR010
 U 1 1 57717843
 P 4025 3700
 F 0 "#PWR010" H 4025 3550 50  0001 C CNN
@@ -293,7 +263,7 @@ F 3 "" H 4025 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R7
+L Device:R_Small R7
 U 1 1 57717B20
 P 4875 4050
 F 0 "R7" V 4800 4025 50  0000 L CNN
@@ -304,7 +274,7 @@ F 3 "" H 4875 4050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Led_Small D6
+L sbduino-uno-rescue:Led_Small D6
 U 1 1 57717BB1
 P 5225 4200
 F 0 "D6" V 5225 4050 50  0000 L CNN
@@ -316,7 +286,7 @@ F 4 "621-1N4448WSF-7" V 5225 4200 60  0001 C CNN "Mouser"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 57717C2E
 P 5225 4475
 F 0 "#PWR011" H 5225 4225 50  0001 C CNN
@@ -329,7 +299,7 @@ $EndComp
 NoConn ~ 7075 6350
 NoConn ~ 7075 6450
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 577183E4
 P 6625 7400
 F 0 "#PWR012" H 6625 7150 50  0001 C CNN
@@ -340,7 +310,7 @@ F 3 "" H 6625 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_Small Y2
+L Device:Crystal_Small Y2
 U 1 1 5771883A
 P 9725 5650
 F 0 "Y2" V 9900 5650 50  0000 C CNN
@@ -352,7 +322,7 @@ F 4 "815-ABM8-16-B2-T" V 9725 5650 60  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L ATMEGA328P-A IC1
+L sbduino-uno-rescue:ATMEGA328P-A IC1
 U 1 1 5771A7C7
 P 7975 6100
 F 0 "IC1" H 7225 7350 50  0000 L BNN
@@ -363,7 +333,7 @@ F 3 "" H 7975 6100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R10
+L Device:R_Small R10
 U 1 1 5771B1FB
 P 9400 5650
 F 0 "R10" H 9430 5670 50  0000 L CNN
@@ -375,7 +345,7 @@ F 4 "660-RK73H2ATTD1004F" H 9400 5650 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C13
+L Device:C_Small C13
 U 1 1 5771B284
 P 10025 5500
 F 0 "C13" V 9975 5550 50  0000 L CNN
@@ -387,7 +357,7 @@ F 4 "81-GRM21A5C2D220JW1D" V 10025 5500 60  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C14
+L Device:C_Small C14
 U 1 1 5771B323
 P 10025 5800
 F 0 "C14" V 9975 5850 50  0000 L CNN
@@ -398,7 +368,7 @@ F 3 "" H 10025 5800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 5771B7C0
 P 10275 5900
 F 0 "#PWR013" H 10275 5650 50  0001 C CNN
@@ -409,7 +379,7 @@ F 3 "" H 10275 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L power:+5V #PWR014
 U 1 1 5771BA16
 P 6050 4950
 F 0 "#PWR014" H 6050 4800 50  0001 C CNN
@@ -420,7 +390,7 @@ F 3 "" H 6050 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C11
+L Device:C_Small C11
 U 1 1 5771BA52
 P 6625 5150
 F 0 "C11" H 6635 5220 50  0000 L CNN
@@ -543,7 +513,7 @@ Wire Wire Line
 	7075 5100 6975 5100
 Connection ~ 6975 5100
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 5771C440
 P 6050 5350
 F 0 "#PWR015" H 6050 5100 50  0001 C CNN
@@ -595,7 +565,7 @@ Wire Wire Line
 	10125 5800 10275 5800
 Connection ~ 10275 5800
 $Comp
-L C_Small C12
+L Device:C_Small C12
 U 1 1 5771D5E1
 P 6625 5800
 F 0 "C12" H 6635 5870 50  0000 L CNN
@@ -606,7 +576,7 @@ F 3 "" H 6625 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 5771D95A
 P 6625 6000
 F 0 "#PWR016" H 6625 5750 50  0001 C CNN
@@ -710,7 +680,7 @@ Wire Wire Line
 Text GLabel 4950 6300 2    40   Input ~ 0
 RESET
 $Comp
-L C_Small C8
+L Device:C_Small C8
 U 1 1 577222C8
 P 4725 6300
 F 0 "C8" V 4625 6225 50  0000 L CNN
@@ -725,7 +695,7 @@ Wire Wire Line
 Wire Wire Line
 	4825 6300 4950 6300
 $Comp
-L CONN_02X03 P4
+L sbduino-uno-rescue:CONN_02X03 P4
 U 1 1 57722B36
 P 8700 3850
 F 0 "P4" H 8700 4050 50  0000 C CNN
@@ -736,7 +706,7 @@ F 3 "" H 8700 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
+L sbduino-uno-rescue:SW_PUSH SW1
 U 1 1 57722DF9
 P 7025 3950
 F 0 "SW1" H 7025 3875 50  0000 C CNN
@@ -754,7 +724,7 @@ MISO
 Text GLabel 9050 3850 2    40   Input ~ 0
 MOSI
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 5772308E
 P 9050 4050
 F 0 "#PWR017" H 9050 3800 50  0001 C CNN
@@ -765,7 +735,7 @@ F 3 "" H 9050 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR018
+L power:+5V #PWR018
 U 1 1 577230D4
 P 9050 3650
 F 0 "#PWR018" H 9050 3500 50  0001 C CNN
@@ -790,7 +760,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 3850 8300 3850
 $Comp
-L D_Small D5
+L Device:D_Small D5
 U 1 1 577243FF
 P 7900 3600
 F 0 "D5" V 7825 3675 50  0000 L CNN
@@ -802,7 +772,7 @@ F 4 "621-1N4448WSF-7" V 7900 3600 60  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R9
+L Device:R_Small R9
 U 1 1 57724476
 P 7600 3575
 F 0 "R9" H 7650 3625 50  0000 L CNN
@@ -813,7 +783,7 @@ F 3 "" H 7600 3575 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR019
+L power:+5V #PWR019
 U 1 1 57724696
 P 7900 3175
 F 0 "#PWR019" H 7900 3025 50  0001 C CNN
@@ -843,7 +813,7 @@ Wire Wire Line
 	7900 3700 7900 3950
 Connection ~ 7900 3950
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 57724C1F
 P 6625 4050
 F 0 "#PWR020" H 6625 3800 50  0001 C CNN
@@ -869,7 +839,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3350 7600 3475
 $Comp
-L +5V #PWR021
+L power:+5V #PWR021
 U 1 1 5772743E
 P 2500 3700
 F 0 "#PWR021" H 2500 3550 50  0001 C CNN
@@ -882,7 +852,7 @@ $EndComp
 Wire Wire Line
 	2500 3700 2500 3850
 $Comp
-L F_Small F1
+L sbduino-uno-rescue:F_Small F1
 U 1 1 57727697
 P 1400 6350
 F 0 "F1" H 1360 6410 50  0000 L CNN
@@ -900,8 +870,6 @@ SCK
 Wire Wire Line
 	3825 3950 3550 3950
 Wire Wire Line
-	5400 2600 5400 2600
-Wire Wire Line
 	5400 2600 5650 2600
 Wire Wire Line
 	6850 2450 6850 2600
@@ -910,7 +878,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2600 6350 2600
 $Comp
-L GND #PWR022
+L power:GND #PWR022
 U 1 1 57731B79
 P 6850 3150
 F 0 "#PWR022" H 6850 2900 50  0001 C CNN
@@ -923,7 +891,7 @@ $EndComp
 Wire Wire Line
 	6850 3150 6850 3000
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 57732010
 P 6000 3150
 F 0 "#PWR023" H 6000 2900 50  0001 C CNN
@@ -947,7 +915,7 @@ VUSB
 Wire Wire Line
 	2050 4050 2200 4050
 $Comp
-L +3V3 #PWR024
+L power:+3V3 #PWR024
 U 1 1 57735387
 P 1350 3700
 F 0 "#PWR024" H 1350 3550 50  0001 C CNN
@@ -962,7 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 3950 1350 3700
 $Comp
-L +5V #PWR025
+L power:+5V #PWR025
 U 1 1 577367DE
 P 5400 2450
 F 0 "#PWR025" H 5400 2300 50  0001 C CNN
@@ -973,7 +941,7 @@ F 3 "" H 5400 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR026
+L power:+3V3 #PWR026
 U 1 1 57736B1B
 P 6850 2450
 F 0 "#PWR026" H 6850 2300 50  0001 C CNN
@@ -985,7 +953,7 @@ F 3 "" H 6850 2450 50  0000 C CNN
 $EndComp
 Connection ~ 6850 2600
 $Comp
-L +5V #PWR027
+L power:+5V #PWR027
 U 1 1 57737840
 P 5050 2450
 F 0 "#PWR027" H 5050 2300 50  0001 C CNN
@@ -996,7 +964,7 @@ F 3 "" H 5050 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R8
+L Device:R_Small R8
 U 1 1 57737894
 P 5050 2700
 F 0 "R8" H 5080 2720 50  0000 L CNN
@@ -1009,7 +977,7 @@ $EndComp
 Wire Wire Line
 	5050 2600 5050 2450
 $Comp
-L GND #PWR028
+L power:GND #PWR028
 U 1 1 5773845D
 P 5050 3150
 F 0 "#PWR028" H 5050 2900 50  0001 C CNN
@@ -1022,7 +990,7 @@ $EndComp
 Wire Wire Line
 	5050 3150 5050 3050
 $Comp
-L +5V #PWR029
+L power:+5V #PWR029
 U 1 1 57739757
 P 2950 5650
 F 0 "#PWR029" H 2950 5500 50  0001 C CNN
@@ -1033,7 +1001,7 @@ F 3 "" H 2950 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR030
+L power:+5V #PWR030
 U 1 1 577397AD
 P 2650 5650
 F 0 "#PWR030" H 2650 5500 50  0001 C CNN
@@ -1048,7 +1016,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 5950 2950 5650
 $Comp
-L C_Small C4
+L Device:C_Small C4
 U 1 1 57739B2B
 P 2650 5850
 F 0 "C4" H 2660 5920 50  0000 L CNN
@@ -1065,7 +1033,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 5750 2650 5650
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 5773A5BD
 P 2950 6200
 F 0 "#PWR031" H 2950 5950 50  0001 C CNN
@@ -1076,7 +1044,7 @@ F 3 "" H 2950 6200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_Small Y1
+L Device:Crystal_Small Y1
 U 1 1 5773A88C
 P 2650 6400
 F 0 "Y1" V 2450 6400 50  0000 C CNN
@@ -1092,7 +1060,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 6150 3100 6150
 $Comp
-L C_Small C2
+L Device:C_Small C2
 U 1 1 5773B1CC
 P 2300 6250
 F 0 "C2" V 2350 6300 50  0000 L CNN
@@ -1103,7 +1071,7 @@ F 3 "" H 2300 6250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C3
+L Device:C_Small C3
 U 1 1 5773B259
 P 2300 6550
 F 0 "C3" V 2350 6600 50  0000 L CNN
@@ -1132,7 +1100,7 @@ Wire Wire Line
 	2650 6300 2650 6250
 Connection ~ 2650 6250
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 5773C10D
 P 1900 6300
 F 0 "#PWR032" H 1900 6050 50  0001 C CNN
@@ -1166,7 +1134,7 @@ Wire Wire Line
 	1900 6250 1900 6300
 Connection ~ 2050 6250
 $Comp
-L GND #PWR033
+L power:GND #PWR033
 U 1 1 5773F3E3
 P 1400 7225
 F 0 "#PWR033" H 1400 6975 50  0001 C CNN
@@ -1200,7 +1168,7 @@ RX
 Text GLabel 4975 6050 2    40   Input ~ 0
 TX
 $Comp
-L R_Small R5
+L Device:R_Small R5
 U 1 1 57740E86
 P 4500 5400
 F 0 "R5" H 4530 5420 50  0000 L CNN
@@ -1211,7 +1179,7 @@ F 3 "" H 4500 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L Device:R_Small R6
 U 1 1 57740F19
 P 4750 5400
 F 0 "R6" H 4780 5420 50  0000 L CNN
@@ -1222,7 +1190,7 @@ F 3 "" H 4750 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR034
+L power:+5V #PWR034
 U 1 1 57740FB8
 P 4500 5200
 F 0 "#PWR034" H 4500 5050 50  0001 C CNN
@@ -1233,7 +1201,7 @@ F 3 "" H 4500 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR035
+L power:+5V #PWR035
 U 1 1 5774101A
 P 4750 5200
 F 0 "#PWR035" H 4750 5050 50  0001 C CNN
@@ -1244,7 +1212,7 @@ F 3 "" H 4750 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D2
+L sbduino-uno-rescue:Led_Small D2
 U 1 1 5774107C
 P 4500 5700
 F 0 "D2" V 4575 5575 50  0000 L CNN
@@ -1255,7 +1223,7 @@ F 3 "" V 4500 5700 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Led_Small D3
+L sbduino-uno-rescue:Led_Small D3
 U 1 1 5774111F
 P 4750 5700
 F 0 "D3" V 4825 5575 50  0000 L CNN
@@ -1278,7 +1246,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 5600 4500 5500
 $Comp
-L R_Small R4
+L Device:R_Small R4
 U 1 1 57743F73
 P 4250 5950
 F 0 "R4" V 4175 5900 50  0000 L CNN
@@ -1289,7 +1257,7 @@ F 3 "" H 4250 5950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R3
+L Device:R_Small R3
 U 1 1 5774401C
 P 4250 6050
 F 0 "R3" V 4325 6000 50  0000 L CNN
@@ -1310,7 +1278,7 @@ RX
 Text GLabel 2500 4550 3    40   Input ~ 0
 VUSB
 $Comp
-L CONN_01X04 X1
+L sbduino-uno-rescue:CONN_01X04 X1
 U 1 1 57748F8F
 P 5100 6850
 F 0 "X1" H 5100 7100 50  0000 C CNN
@@ -1341,7 +1309,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 7000 4800 7000
 $Comp
-L CONN_01X04 P2
+L sbduino-uno-rescue:CONN_01X04 P2
 U 1 1 5774D30D
 P 7600 1150
 F 0 "P2" H 7600 1400 50  0000 C CNN
@@ -1352,7 +1320,7 @@ F 3 "" H 7600 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P3
+L sbduino-uno-rescue:CONN_01X04 P3
 U 1 1 5774D3D4
 P 8600 1150
 F 0 "P3" H 8600 1400 50  0000 C CNN
@@ -1363,7 +1331,7 @@ F 3 "" H 8600 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P5
+L sbduino-uno-rescue:CONN_01X04 P5
 U 1 1 5774D4C7
 P 9550 1150
 F 0 "P5" H 9550 1400 50  0000 C CNN
@@ -1374,7 +1342,7 @@ F 3 "" H 9550 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P6
+L sbduino-uno-rescue:CONN_01X08 P6
 U 1 1 5774D5C2
 P 9550 2400
 F 0 "P6" H 9550 2850 50  0000 C CNN
@@ -1385,7 +1353,7 @@ F 3 "" H 9550 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P9
+L sbduino-uno-rescue:CONN_01X08 P9
 U 1 1 5774D6A9
 P 10750 4350
 F 0 "P9" H 10750 4800 50  0000 C CNN
@@ -1396,7 +1364,7 @@ F 3 "" H 10750 4350 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_01X10 P7
+L sbduino-uno-rescue:CONN_01X10 P7
 U 1 1 5774DC5C
 P 10750 2500
 F 0 "P7" H 10750 3050 50  0000 C CNN
@@ -1407,7 +1375,7 @@ F 3 "" H 10750 2500 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_01X06 P8
+L sbduino-uno-rescue:CONN_01X06 P8
 U 1 1 5774DD2D
 P 10750 3500
 F 0 "P8" H 10750 3850 50  0000 C CNN
@@ -1418,7 +1386,7 @@ F 3 "" H 10750 3500 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR036
+L power:+3V3 #PWR036
 U 1 1 5774E33A
 P 7300 900
 F 0 "#PWR036" H 7300 750 50  0001 C CNN
@@ -1429,7 +1397,7 @@ F 3 "" H 7300 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR037
+L power:GND #PWR037
 U 1 1 5774E59B
 P 7300 1400
 F 0 "#PWR037" H 7300 1150 50  0001 C CNN
@@ -1462,7 +1430,7 @@ SDA
 Text GLabel 8300 1000 0    40   Input ~ 0
 SCL
 $Comp
-L +5V #PWR038
+L power:+5V #PWR038
 U 1 1 5774FFDC
 P 8000 1000
 F 0 "#PWR038" H 8000 850 50  0001 C CNN
@@ -1473,7 +1441,7 @@ F 3 "" H 8000 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR039
+L power:GND #PWR039
 U 1 1 57750056
 P 8000 1400
 F 0 "#PWR039" H 8000 1150 50  0001 C CNN
@@ -1504,7 +1472,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 1100 9350 1100
 $Comp
-L +5V #PWR040
+L power:+5V #PWR040
 U 1 1 57754F37
 P 8950 1000
 F 0 "#PWR040" H 8950 850 50  0001 C CNN
@@ -1515,7 +1483,7 @@ F 3 "" H 8950 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR041
+L power:GND #PWR041
 U 1 1 57754F3D
 P 8950 1400
 F 0 "#PWR041" H 8950 1150 50  0001 C CNN
@@ -1545,7 +1513,7 @@ Wire Wire Line
 	9350 2550 8950 2550
 Connection ~ 8950 2650
 $Comp
-L GND #PWR042
+L power:GND #PWR042
 U 1 1 577563F0
 P 8950 2800
 F 0 "#PWR042" H 8950 2550 50  0001 C CNN
@@ -1558,7 +1526,7 @@ $EndComp
 Wire Wire Line
 	9350 2750 9250 2750
 $Comp
-L +5V #PWR043
+L power:+5V #PWR043
 U 1 1 57756DFB
 P 8600 1900
 F 0 "#PWR043" H 8600 1750 50  0001 C CNN
@@ -1575,7 +1543,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 2450 9350 2450
 $Comp
-L +3V3 #PWR044
+L power:+3V3 #PWR044
 U 1 1 57756FB1
 P 8950 1900
 F 0 "#PWR044" H 8950 1750 50  0001 C CNN
@@ -1615,7 +1583,7 @@ SS
 Text GLabel 10375 2650 0    40   Input ~ 0
 MOSI
 $Comp
-L GND #PWR045
+L power:GND #PWR045
 U 1 1 57759760
 P 10025 2450
 F 0 "#PWR045" H 10025 2200 50  0001 C CNN
@@ -1704,7 +1672,7 @@ Wire Wire Line
 Text GLabel 10350 4600 0    40   Input ~ 0
 TX
 $Comp
-L Led_Small D4
+L sbduino-uno-rescue:Led_Small D4
 U 1 1 5776816F
 P 5050 2950
 F 0 "D4" V 5050 2800 50  0000 L CNN
@@ -1723,7 +1691,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6650 1300 6650
 $Comp
-L USB_B-RESCUE-sbduino-uno P1
+L sbduino-uno-rescue:USB_B-RESCUE-sbduino-uno P1
 U 1 1 57774647
 P 1000 6850
 F 0 "P1" H 1200 6650 50  0000 C CNN
@@ -1737,7 +1705,7 @@ Wire Wire Line
 	900  7150 1400 7150
 Connection ~ 1400 7150
 $Comp
-L LP2985 U4
+L staticboards:LP2985 U4
 U 1 1 57880D17
 P 6000 2700
 F 0 "U4" H 6200 2350 40  0000 C CNN
@@ -1756,7 +1724,7 @@ Wire Wire Line
 	5400 2750 5400 2600
 Connection ~ 5400 2600
 $Comp
-L C_Small C15
+L Device:C_Small C15
 U 1 1 57882CD6
 P 6450 2900
 F 0 "C15" H 6460 2970 50  0000 L CNN
@@ -1768,7 +1736,7 @@ F 4 "603-CC805MRY5V9BB103" H 6450 2900 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR046
+L power:GND #PWR046
 U 1 1 57882F73
 P 6450 3150
 F 0 "#PWR046" H 6450 2900 50  0001 C CNN
@@ -1785,7 +1753,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 2750 6450 2800
 $Comp
-L CP_Small C9
+L Device:CP_Small C9
 U 1 1 5788C499
 P 6850 2900
 F 0 "C9" H 6860 2970 50  0000 L CNN
@@ -1801,7 +1769,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2600 5400 2450
 $Comp
-L C_Small C10
+L Device:C_Small C10
 U 1 1 57AC34DE
 P 6350 5150
 F 0 "C10" H 6360 5220 50  0000 L CNN
@@ -1826,7 +1794,7 @@ Wire Wire Line
 	6625 5300 6625 5250
 Connection ~ 6350 5300
 $Comp
-L C_Small C16
+L Device:C_Small C16
 U 1 1 57AC5286
 P 6050 5150
 F 0 "C16" H 6060 5220 50  0000 L CNN
@@ -1849,7 +1817,7 @@ D-
 Text Label 1325 6850 0    40   ~ 0
 D+
 $Comp
-L Q_PMOS_GSD Q1
+L Device:Q_PMOS_GSD Q1
 U 1 1 5839A878
 P 2400 4050
 F 0 "Q1" H 2700 4100 50  0000 R CNN
@@ -1876,7 +1844,7 @@ Text GLabel 4800 7000 0    40   Input ~ 0
 RTS
 $Bitmap
 Pos 1300 1200
-Scale 1,000000
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 00 00 00 01 00 08 06 00 00 00 5C 72 A8 
 66 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 17 A7 49 44 41 54 78 9C ED 9D ED 69 1C 
