@@ -5,7 +5,6 @@
 *.net
 *.csv
 *.xml
-*-cache.*
 *-rescue.lib
 gerber/
 rescue-backup/

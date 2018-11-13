@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:staticboards
 LIBS:sbduino-uno-cache
 EELAYER 25 0
 EELAYER END

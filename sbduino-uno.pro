@@ -1,4 +1,4 @@
-update=16/03/2017 11:59:52
+update=13/11/2018 12:07:06
 version=1
 last_client=kicad
 [cvpcb]
@@ -27,7 +27,7 @@ BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
 [schematic_editor]
 version=1
-PageLayoutDescrFile=Z:/staticboards/altium/kicad/templates/pagelayout_default.kicad_wks
+PageLayoutDescrFile=S:/kicad/templates/pagelayout_default.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
@@ -69,4 +69,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=Z:/staticboards/altium/kicad/lib/staticboards
+LibName31=S:/kicad/lib/staticboards/staticboards
